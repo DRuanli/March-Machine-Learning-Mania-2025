@@ -39,11 +39,11 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:') \
  \
     # Change for different project
-project_name = 'NCAA-25'
+project_name = 'NCAA25'
 
 list_of_files = [
     # give path to be more robotic
-    ".github/workflow/.gitkeep",
+    #".github/workflow/.gitkeepBa,
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
