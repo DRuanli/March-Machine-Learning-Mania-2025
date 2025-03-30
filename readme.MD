@@ -104,7 +104,7 @@ The most significant predictors of tournament success are:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/NCAA25.git
+git clone https://github.com/DRuanli/NCAA25.git
 cd NCAA25
 
 # Create and activate virtual environment
