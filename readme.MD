@@ -1,6 +1,6 @@
 # NCAA25: March Madness Tournament Prediction System
 
-![NCAA Basketball](https://www.usatoday.com/gcdn/authoring/authoring-images/2024/03/21/PMCA/73059958007-240321-march-madness-practice-32.JPG?crop=3999,2250,x0,y208&width=660&height=371&format=pjpg&auto=webp)
+![NCAA Basketball](https://img.shields.io/badge/NCAA-Basketball-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)
 ![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-orange)
 ![ROC AUC](https://img.shields.io/badge/ROC%20AUC-0.984-success)
