@@ -29,3 +29,12 @@ class ModelTrainerConfig:
     calibration_method: str
     feature_columns_file: Path
 
+@dataclass(frozen=True)
+class ModelAnalysisConfig:
+    root_dir: Path
+    model_path: Path
+    submission_path: Path
+    train_data_path: Path
+    feature_columns_file: Path
+    calibrator_path: Path
+    analysis_reports_dir: Path

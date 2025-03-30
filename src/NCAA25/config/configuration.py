@@ -1,6 +1,6 @@
 from src.NCAA25.constants import *
 from src.NCAA25.utils.common import read_yaml, create_directories
-from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig, ModelTrainerConfig
+from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig, ModelTrainerConfig, ModelAnalysisConfig
 from pathlib import Path
 
 
@@ -65,4 +65,19 @@ class ConfigurationManager:
             random_state=self.params.random_forest.random_state,
             calibration_method=self.params.calibration.method,
             feature_columns_file=config.feature_columns_file
+        )
+
+    def get_model_analysis_config(self) -> ModelAnalysisConfig:
+        """Get configuration for model analysis"""
+        config = self.config.model_analysis
+        create_directories([config.root_dir, config.analysis_reports_dir])
+
+        return ModelAnalysisConfig(
+            root_dir=config.root_dir,
+            model_path=config.model_path,
+            submission_path=config.submission_path,
+            train_data_path=config.train_data_path,
+            feature_columns_file=config.feature_columns_file,
+            calibrator_path=config.calibrator_path,
+            analysis_reports_dir=config.analysis_reports_dir
         )
