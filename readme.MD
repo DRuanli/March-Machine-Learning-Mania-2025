@@ -21,7 +21,7 @@ NCAA25 uses historical NCAA tournament and regular season game data to build a p
 
 The model achieves strong predictive performance with **AUC score of 0.984** and maintains good calibration between predicted probabilities and actual outcomes.
 
-![Model Performance](./templates/img/precision_recall_curve.png)
+<img src="./templates/img/precision_recall_curve.png" alt="Model Performance" width="400"/>
 
 ## Key Features
 
