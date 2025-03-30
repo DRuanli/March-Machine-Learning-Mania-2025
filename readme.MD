@@ -12,7 +12,7 @@ A machine learning-based system to predict outcomes of NCAA basketball tournamen
 
 ![Basketball Analytics](https://img.shields.io/badge/Analytics-Basketball-red)
 
-This project is made for **NCAA 2025** competition in Kaglle 
+This project is made for **NCAA 2025** competition in Kaggle 
 
 My team reach the highest place at 6th position; 
 
