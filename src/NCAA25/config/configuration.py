@@ -1,6 +1,6 @@
 from src.NCAA25.constants import *
 from src.NCAA25.utils.common import read_yaml, create_directories
-from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig
+from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig, ModelTrainerConfig
 from pathlib import Path
 
 
@@ -48,3 +48,21 @@ class ConfigurationManager:
         create_directories([data_preparation_config.output_dir])
 
         return data_preparation_config
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        """
+        Get the configuration for model training
+        """
+        config = self.config.model_trainer
+        create_directories([config.root_dir])
+
+        return ModelTrainerConfig(
+            root_dir=config.root_dir,
+            trained_model_path=config.trained_model_path,
+            model_params=self.params.random_forest,
+            train_data_path=config.train_data_path,
+            test_size=config.test_size,
+            random_state=self.params.random_forest.random_state,
+            calibration_method=self.params.calibration.method,
+            feature_columns_file=config.feature_columns_file
+        )

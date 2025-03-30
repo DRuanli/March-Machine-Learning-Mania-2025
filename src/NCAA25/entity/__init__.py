@@ -17,3 +17,15 @@ class DataPreparationConfig:
     tourney_results_file: Path
     detailed_results_file: Path
     output_dir: Path
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    trained_model_path: Path
+    model_params: dict
+    train_data_path: Path
+    test_size: float
+    random_state: int
+    calibration_method: str
+    feature_columns_file: Path
+
