@@ -5,8 +5,9 @@
 ![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-orange)
 ![ROC AUC](https://img.shields.io/badge/ROC%20AUC-0.984-success)
 
-A machine learning-based system to predict outcomes of NCAA basketball tournament games using historical data analysis, seed performance, and team statistics.
+![Bracket Simulation]https://www.usatoday.com/gcdn/authoring/authoring-images/2024/03/21/PMCA/73059958007-240321-march-madness-practice-32.JPG?crop=3999,2250,x0,y208&width=660&height=371&format=pjpg&auto=webp)
 
+A machine learning-based system to predict outcomes of NCAA basketball tournament games using historical data analysis, seed performance, and team statistics.
 ## Project Overview
 
 ![Basketball Analytics](https://img.shields.io/badge/Analytics-Basketball-red)
