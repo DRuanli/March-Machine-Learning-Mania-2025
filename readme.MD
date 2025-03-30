@@ -12,6 +12,12 @@ A machine learning-based system to predict outcomes of NCAA basketball tournamen
 
 ![Basketball Analytics](https://img.shields.io/badge/Analytics-Basketball-red)
 
+This project is made for **NCAA 2025** competition in Kaglle 
+
+My team reach the highest place at 6th position; 
+
+![Kaggle](./templates/img/Kaggle.png)
+
 NCAA25 uses historical NCAA tournament and regular season game data to build a predictive model that forecasts the probability of a team winning in tournament matchups. The system:
 
 1. Analyzes team performance metrics from regular season and tournament games
