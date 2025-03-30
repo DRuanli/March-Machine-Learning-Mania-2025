@@ -2,6 +2,7 @@ from src.NCAA25 import logger
 from src.NCAA25.pipeline.stage_01_data_ingestion import main as stage_01_main
 from src.NCAA25.pipeline.stage_02_model_training import main as stage_02_main
 from src.NCAA25.pipeline.stage_03_model_analysis import main as stage_03_main
+from src.NCAA25.pipeline.stage_04_dashboard import main as stage_04_main
 
 
 if __name__ == "__main__":
@@ -15,7 +16,12 @@ if __name__ == "__main__":
 
         logger.info("NCAA Tournament Prediction Pipeline Completed")
 
-        stage_03_main()
+        #stage_03_main()
+
+        logger.info("NCAA Tournament Prediction Pipeline Completed")
+
+        # Run Stage 4: Dashboard Creation
+        stage_04_main()
 
         logger.info("NCAA Tournament Prediction Pipeline Completed")
     except Exception as e:

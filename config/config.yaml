@@ -21,3 +21,13 @@ model_analysis:
   train_data_path: artifacts/data_ingestion/processed/tourney_games_features.csv
   feature_columns_file: artifacts/data_ingestion/processed/feature_columns.csv
   analysis_reports_dir: artifacts/model_analysis/reports
+
+dashboard:
+  root_dir: artifacts/dashboard
+  model_path: artifacts/model_trainer/model.joblib
+  analysis_dir: artifacts/model_analysis
+  template_dir: artifacts/dashboard/templates
+  static_dir: artifacts/dashboard/static
+  submission_path: artifacts/model_trainer/submission.csv
+  host: "0.0.0.0"
+  port: 8050

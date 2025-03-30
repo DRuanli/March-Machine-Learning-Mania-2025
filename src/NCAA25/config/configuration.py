@@ -1,6 +1,6 @@
 from src.NCAA25.constants import *
 from src.NCAA25.utils.common import read_yaml, create_directories
-from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig, ModelTrainerConfig, ModelAnalysisConfig
+from src.NCAA25.entity import DataIngestionConfig, DataPreparationConfig, ModelTrainerConfig, ModelAnalysisConfig, DashboardConfig
 from pathlib import Path
 
 
@@ -80,4 +80,20 @@ class ConfigurationManager:
             feature_columns_file=config.feature_columns_file,
             calibrator_path=config.calibrator_path,
             analysis_reports_dir=config.analysis_reports_dir
+        )
+
+    def get_dashboard_config(self) -> DashboardConfig:
+        """Get configuration for dashboard"""
+        config = self.config.dashboard
+        create_directories([config.root_dir, config.static_dir])
+
+        return DashboardConfig(
+            root_dir=config.root_dir,
+            model_path=config.model_path,
+            analysis_dir=config.analysis_dir,
+            template_dir=config.template_dir,
+            static_dir=config.static_dir,
+            submission_path=config.submission_path,
+            host=config.host,
+            port=config.port
         )
