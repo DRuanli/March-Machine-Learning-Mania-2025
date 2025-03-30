@@ -74,7 +74,8 @@ The model reveals several key insights about NCAA tournament prediction:
 
 ### Feature Importance
 
-![Feature Importance](./artifacts/model_analysis/reports/feature_importance.png)
+![Feature Importance](./templates/img/feature_importance.png)
+
 
 The most significant predictors of tournament success are:
 
