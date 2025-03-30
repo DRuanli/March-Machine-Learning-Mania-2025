@@ -38,3 +38,14 @@ class ModelAnalysisConfig:
     feature_columns_file: Path
     calibrator_path: Path
     analysis_reports_dir: Path
+
+@dataclass(frozen=True)
+class DashboardConfig:
+    root_dir: Path
+    model_path: Path
+    analysis_dir: Path
+    template_dir: Path
+    static_dir: Path
+    submission_path: Path
+    host: str
+    port: int
