@@ -1,0 +1,20 @@
+tensorflow==2.16.1
+pandas
+dvc
+#mlflow==2.3.0
+mlflow==2.3.0 # if your python version too new change it
+notebook
+numpy
+matplotlib
+seaborn
+python-box==6.0.2
+pyYAML # to use yaml file
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+Flask # flask for web app
+Flask-Cors
+gdown # read data from gg drive
+-e . # enable development mode

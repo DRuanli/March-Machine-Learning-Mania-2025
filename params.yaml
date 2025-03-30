@@ -1,0 +1,14 @@
+random_forest:
+  n_estimators: 235
+  random_state: 42
+  max_depth: 15
+  min_samples_split: 2
+  max_features: 'sqrt'
+
+preprocessing:
+  imputation_strategy: 'mean'
+  scaling: 'standard'
+
+calibration:
+  method: 'isotonic'
+  out_of_bounds: 'clip'
