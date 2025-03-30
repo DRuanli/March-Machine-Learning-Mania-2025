@@ -36,8 +36,6 @@ The model achieves strong predictive performance with **AUC score of 0.984** and
 - **Model Analysis**: Comprehensive evaluation including ROC curves, precision-recall analysis, and upset probability assessment
 - **Bracket Simulation**: Tools to simulate tournament outcomes based on model predictions
 
-![Bracket Simulation](./artifacts/model_analysis/reports/bracket_simulation.png)
-
 ## Project Structure
 
 ```
@@ -85,11 +83,11 @@ The most significant predictors of tournament success are:
 
 ### Performance Analysis
 
-![ROC Curve](./artifacts/model_analysis/reports/roc_curve.png)
+![ROC Curve](./templates/img/roc_curve.png)
 
-![Precision-Recall Curve](./artifacts/model_analysis/reports/precision_recall_curve.png)
+![Precision-Recall Curve](./templates/img/precision_recall_curve.png)
 
-![Win Probabilities by Seed Difference](./artifacts/model_analysis/reports/upset_probability.png)
+![Win Probabilities by Seed Difference](./templates/img/upset_probability.png)
 
 - **Well-calibrated probabilities**: Model predictions closely align with actual win rates
 - **Strong Upset Detection**: Accurately identifies potential upsets when lower seeds have stronger statistics
